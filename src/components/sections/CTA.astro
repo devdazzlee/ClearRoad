@@ -1,0 +1,53 @@
+---
+import Button from "../shared/Button.astro";
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+---
+
+<section id="cta" class="pb-20">
+  <Container>
+    <div
+      class="w-full relative py-12 md:py-16 px-8 md:px-12 rounded-2xl bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-900 shadow-lg"
+    >
+      <!-- Background Blur Elements -->
+      <div class="absolute right-0 top-0 h-full w-full flex justify-end">
+        <div class="w-28 h-28 rounded-xl blur-2xl">
+          <span class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"></span>
+          <span class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"></span>
+          <span class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"></span>
+        </div>
+      </div>
+      <div class="absolute left-0 bottom-0 h-full w-full flex items-end">
+        <div class="w-28 h-28 rounded-xl blur-2xl">
+          <span class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"></span>
+          <span class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"></span>
+          <span class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"></span>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="mx-auto text-center max-w-xl md:max-w-2xl relative">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-heading-1">
+          Kickstart Your <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-green-600">Dispatch Experience</span>
+        </h1>
+        <Paragraph className="pt-8 text-lg">
+Are you ready to elevate your logistics operations? At ClearRoad, we're dedicated to providing straightforward solutions that meet your dispatch needs. Reach out to us today for a tailored approach that focuses on clarity and efficiency.
+        </Paragraph>
+
+        <!-- Contact Details -->
+        <div class="text-lg text-heading-3 pt-6">
+          <p>📍 1129 E Altamonte Springs Dr Unit # 106, 32701, FL, US</p>
+          <p>📞 <a href="tel:+03278227842" class="text-white underline">+1 (407) 555-0199</a></p>
+          <p>✉️ <a href="mailto:ahmedrazagithub@gmail.com" class="text-white underline">contact@clearroad.com</a></p>
+        </div>
+
+        <!-- Button -->
+        <div class="mx-auto max-w-md sm:max-w-xl pt-10">
+          <Button variant="primary" href="#contact">
+            <span class="text-white relative z-[5]">Get In Touch</span>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>
